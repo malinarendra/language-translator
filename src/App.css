@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#note {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    transition: 0.3s;
+}
+
+#note p {
+    color: white;
+    background-color: rebeccapurple;
+    padding: 15px 25px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-size: 18px;
+    margin: 0px 20px;
+}
+
+#note p #cross {
+    background-color: white;
+    color: rebeccapurple;
+    padding: 5px 13px;
+    margin-left: 1rem;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#note p #hundread {
+    color: #FFEB3B;
+    margin: 0px 6px;
+}
+
+#note p #cross:hover {
+    background-color: red;
+    color: white;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    margin-top: 2rem;
+}
+
+#main .input {
+    margin: 1rem 2rem;
+}
+
+#main .output {
+    margin: 1rem 2rem;
+}
+
+/* display flex for from or to and select option */
+.hi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.space {
+    margin-right: 1rem;
+    font-size: 20px;
+}
+
+.select {
+    padding: 8px 2rem;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.text {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+textarea {
+    resize: none;
+    width: 22rem;
+    height: 12rem;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.copyText {
+    background-color: #00000026;
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    padding: 3px 15px;
+    border-radius: 10px;
+    color: #060606;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn button {
+    padding: 8px 10px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+#btn button:hover {
+    color: white;
+    background-color: #25aae1;
+}
+
+#direction {
+    font-size: 20px;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+@media screen and (max-width:1030px) {
+    textarea {
+        width: 20rem;
+        height: 10rem;
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    textarea {
+        width: 18rem;
+        height: 8rem;
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    #main {
+        margin: 0rem auto;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+
+    #main .input {
+        margin: 0rem 0rem;
+        margin-bottom: 2rem;
+    }
+
+    #main .output {
+        margin: 0rem 0rem;
+        margin-bottom: 2rem;
+    }
+
+    .space {
+        margin-right: 1rem;
+        font-size: 20px;
+    }
+
+    .select {
+        padding: 5px 28px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    .text {
+        margin-top: 12px;
+    }
+
+    textarea {
+        width: 18rem;
+        height: 8rem;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    #btn button {
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+
+    #direction {
+        margin-bottom: 2rem;
+    }
+
+    #direction {
+        transform: rotate(0deg);
+    }
+
+}
+
+textarea {
+    resize: none;
+}
